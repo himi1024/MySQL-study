@@ -1,0 +1,6 @@
+SELECT * FROM employees
+-- BEGIN with character"s/S"
+WHERE first_name LIKE "s%";
+
+-- End With charcter "s/S"
+WHERE first_name LIKE "s%";

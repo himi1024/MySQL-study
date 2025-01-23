@@ -1,0 +1,9 @@
+-- DEFAULT: ascending
+SELECT * FROM employees
+ORDER BY last_name;
+-- OR
+ORDER BY last_name ASC;
+
+-- Descending
+SELECT * FROM employees
+ORDER BY last_name DESC;

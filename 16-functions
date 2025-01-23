@@ -1,0 +1,5 @@
+-- COUNT: how many transactions that have amount
+-- AS <alias>: (OPTIONAL)
+SELECT COUNT(amount) AS count
+FROM transactions;
+
