@@ -1,0 +1,10 @@
+-- Primary Key is For Searching Purpose
+CREATE TABLE transactions(
+    transaction_id INT PRIMARY KEY,
+    amount DECIMAL(6, 2)
+)
+
+--
+ALTER TABLE transactions
+ADD CONSTRAINT
+PRIMARY KEY(transaction_id);

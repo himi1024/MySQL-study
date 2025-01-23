@@ -1,0 +1,10 @@
+INSERT INTO employees
+-- Add data to the ROW
+VALUES (2, "A", "Chan", 22.34, "2025-01-23"),
+       (3, "B", "Chan", 32.34, "2025-01-23"),
+       (4, "C", "Chan", 42.34, "2025-01-23");
+
+
+-- Add data with empty column
+INSERT INTO employees (employee_id, first_name, last_name)
+VALUES (5, "D", "D")

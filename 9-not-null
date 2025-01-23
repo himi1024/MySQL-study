@@ -1,0 +1,9 @@
+-- DATA that cannot be null
+CREATE TABLE sample(
+    sample_id INT NOT NULL,
+    sample_name VARCHAR(30) NOT NULL,
+    cost DECIMAL(6, 2)
+);
+
+-- MODIFY data to NOT NULL
+MODIFY cost DECIMAL (6, 2) NOT NULL

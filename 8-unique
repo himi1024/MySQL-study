@@ -4,3 +4,9 @@ CREATE TABLE products (
     product_name VARCHAR(30) UNIQUE,
     price DECIMAL(6, 2)
 )
+
+-- ALTERNATIVE for adding UNIQUE
+
+ALTER TABLE products
+ADD CONSTRAINT
+UNIQUE(product_name);

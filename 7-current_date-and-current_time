@@ -1,0 +1,8 @@
+CREATE TABLE time_tst(
+    my_date DATE,
+    my_time TIME,
+    my_datetime DATETIME
+);
+
+INSERT INTO time_tst
+VALUES(CURERENT_DATE(), CURRENT_TIME(), NOW())

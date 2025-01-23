@@ -1,0 +1,12 @@
+-- If CHECK is not pass, data cannot insert into the table
+CREATE TABLE employees (
+    employee_id INT,
+    first_name VARCHAR(30),
+    last_name VARCHAR(30),
+    hourly_pay DECIMAL(6, 2),
+    CONSTRAINT chk_hourly_pay CHECK (hourly_pay >= 10.00)
+);
+
+
+ALTER TABLE employees
+ADD CONSTRAINT chk_hourly_pay CHECK (hourly_pay >= 10.00);

@@ -1,0 +1,15 @@
+-- Initial AUTO_INCREMENT = 1
+CREATE TABLE transactions (
+    transaction_id INT PRIMARY KEY AUTO_INCREMENT,
+    amount DECIMAL(6, 2)
+);
+
+-- AUTO_INCREMENT = 1000
+CREATE TABLE transactions (
+    transaction_id INT PRIMARY KEY AUTO_INCREMENT,
+    amount DECIMAL(6, 2)
+) AUTO_INCREMENT = 1000;
+
+-- OR
+
+ALTER TABLE transactions AUTO_INCREMENT = 1000;

@@ -1,0 +1,4 @@
+-- Update data in a table
+UPDATE employees
+SET hourly_pay = 10.00
+WHERE_employee_id = 1;

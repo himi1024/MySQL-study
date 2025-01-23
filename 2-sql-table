@@ -1,0 +1,43 @@
+-- CREATE a TABLE
+CREATE TABLE employees (
+    -- data & its data type
+    employee_id INT,
+    first_name VARCHAR(30),
+    last_name VARCHAR(30),
+    hourly_pay DECIMAL(5, 2),
+    hire_date DATE
+);
+
+-- VIEW ALL the data 
+SELECT * FROM employees;
+
+-- RENAME table
+RENAME TABLE employees TO workers;
+
+-- DROP table
+DROP TABLE employees;
+
+-- ADD another data in the table
+ALTER TABLE employees
+ADD phone_number VARCHAR(20);
+
+-- RENAME data in the table
+ALTER TABLE employees
+RENAME COLUMN phone_number to phone;
+
+
+-- MODIFY data type
+ALTER TABLE employees
+MODIFY COLUMN phone VARCHAR(100);
+
+-- MOVE the data column position
+ALTER TABLE employees
+MODIFY phone VARCHAR(100)
+-- MOVE the "phone" column right to "last_name"
+AFTER last_name;
+-- first column
+FIRST;
+
+-- DROP Column
+ALTER TABLE employees
+DROP COLUMN phone;
