@@ -1,0 +1,3 @@
+-- LIMIT to show how many # of data
+SELECT * FROM customers
+ORDER BY last_name DESC LIMIT 1;

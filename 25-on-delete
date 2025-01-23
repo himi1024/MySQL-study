@@ -1,0 +1,5 @@
+-- when delete the customer_id -> automatically set it to NULL
+ALTER TABLE transaction
+ADD CONSTRAINT fk_customer_id
+FOREIGN(customer_id) REFERENCES customer(customer_id)
+ON DELETE SET NULL;
