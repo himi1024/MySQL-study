@@ -1,0 +1,6 @@
+-- product_name is UNIQUE
+CREATE TABLE products (
+    product_id INT,
+    product_name VARCHAR(30) UNIQUE,
+    price DECIMAL(6, 2)
+)

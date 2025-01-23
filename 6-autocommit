@@ -1,0 +1,5 @@
+-- Need to Manually save for each transaction (COMMIT)
+SET AUTOCOMMIT = OFF;
+
+-- UNDO to the COMMIT
+ROLLBACK;
